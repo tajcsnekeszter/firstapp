@@ -16,6 +16,6 @@ public class SimpleSelect implements SimpleStrategy<Integer> {
 		while (list.get(i)% denominator !=0) {
 			i ++;
 		}
-		return i ;
+		return i;
 	}	
 }

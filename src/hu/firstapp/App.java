@@ -34,31 +34,11 @@ public class App {
 		
 		denominator = 37;
 		System.out.println("A sorozat " + facade.getFound(denominator) + ". eleme osztható " + denominator + "-al");
-		System.out.println("A sorozatban " + count(denominator) + " db " + denominator + "-al osztható szám van!");
-		System.out.println("A sorozat " + max() + ". eleme a  legnagyobb, értéke " + list.get(max()));
+		System.out.println("A sorozatban " + facade.getCount(denominator) + " db " + denominator + "-al osztható szám van!");
+		System.out.println("A sorozat " + facade.getMax() + ". eleme a  legnagyobb, értéke " + list.get(facade.getMax()));
 		System.out.println(this);
 	}
 	
-	private int count(final int denominator) {
-		int db = 0;
-		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i)% denominator ==0 ) {
-				db = db + 1;
-			}
-		}
-		return db;
-	}
-
-	private int max() {
-		int max = 0;
-		for (int i = 1; i < list.size(); i++) {
-			if (list.get(i) > list.get(max)) {
-				max = i;
-			}
-		}
-		return max;
-	}
-
 	@Override
 	public String toString() {
 		return "App [x=" + list + "]";

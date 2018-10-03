@@ -18,5 +18,4 @@ public class SimpleFind implements SimpleStrategy<Integer> {
 		}
 		return i < list.get(i) ? i : -1;
 	}
-
 }

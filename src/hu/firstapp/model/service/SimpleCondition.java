@@ -20,5 +20,4 @@ public class SimpleCondition implements SimpleStrategy<Boolean> {
 		}
 		return i < list.size();
 	}
-
 }
